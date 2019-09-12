@@ -65,3 +65,9 @@ return count( $comments_by_type['comment'] );
 return $count;
 }
 }
+
+function new_excerpt_more( $more ) {
+    return '<div class="read-more"><a title="Read post" href="'. get_permalink( get_the_ID() ) . '">' . __('Read more', 'your-text-domain') . '</a></div>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+add_filter( 'use_default_gallery_style', '__return_false' );

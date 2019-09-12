@@ -1,0 +1,43 @@
+.menu-main {
+    border-top: 1rem solid $accent-color;
+    padding-bottom: 1rem;
+    text-align: center;
+
+    li {
+        font-size: 120%;
+        padding: 1rem 2rem 1rem 0;
+    }
+
+    .current_page_item {
+
+        a {
+            &::before {
+                content: '>';
+                display: inline-block;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+}
+
+.menu-404 {
+    font-size: 100%;
+    text-align: center;
+}
+
+@media only screen and (min-width: $screen-sm) {
+    .menu-main {
+        border-bottom: 0;
+        border-top: 2rem solid $accent-color;
+        padding-bottom: 0;
+        padding-top: 1rem;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: $screen-md) {
+    .menu-main {
+        border-top-width: 3rem;
+    }
+}

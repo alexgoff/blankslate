@@ -1,8 +1,9 @@
 <div class="clear"></div>
 </div>
 <footer id="footer" role="contentinfo">
-<div id="copyright">
-<?php echo sprintf( __( '%1$s %2$s %3$s. All Rights Reserved.', 'blankslate' ), '&copy;', date( 'Y' ), esc_html( get_bloginfo( 'name' ) ) ); echo sprintf( __( ' Theme By: %1$s.', 'blankslate' ), '<a href="http://tidythemes.com/">TidyThemes</a>' ); ?>
+<div id="copyright" class="copyright">
+    <?php echo sprintf( __( '%1$s %2$s %3$s. all rights reserved.', 'blankslate' ), '&copy; 2016 -', date( 'Y' ), esc_html( get_bloginfo( 'name' ) ) ); ?>
+    email the <a class="webmaster" href="mailto:me@alex-goff.com" rel="noopener" target="_blank" title="webmaster">webmaster</a>.
 </div>
 </footer>
 </div>

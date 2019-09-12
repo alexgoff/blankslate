@@ -1,0 +1,206 @@
+body {
+    color: $text-color;
+    font-family: $font-family-mono;
+    line-height: 1.5;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &:focus {
+        outline: 2px dashed $accent-color;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.602rem;
+}
+
+h2 {
+    font-size: 1.424rem;
+}
+
+h3 {
+    font-size: 1.266rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+p,ul,ol,dl,span {
+    font-family: $font-family-sans;
+}
+
+a {
+    background:
+        linear-gradient(to bottom,
+        $text-color 0%,
+        $text-color 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    color: $text-color;
+    font-family: $font-family-mono;
+    text-decoration: none;
+    transition: background-size 0.2s linear, color 0.1s linear;
+
+    &:hover,
+    &:focus {
+        background-size: 2px 50px;
+        color: $white;
+        outline: none;
+    }
+}
+
+.site-title {
+    margin-top: 1rem;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+    }
+
+    a {
+        background: none;
+        color: $text-color;
+        display: block;
+        font-family: $font-family-sans;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+        paint-order: stroke fill;
+        position: relative;
+        white-space: nowrap;
+        z-index: 1;
+
+        -moz-text-fill-color: #fff;
+        -webkit-text-fill-color: #fff;
+        -moz-text-stroke-color: $text-color;
+        -webkit-text-stroke-color: $text-color;
+        -moz-text-stroke-width: 3px;
+        -webkit-text-stroke-width: 3px;
+
+        &::before,
+        &::after {
+            content: attr(data-content);
+            display: inline-block;
+            paint-order: stroke fill;
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+
+            -moz-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            -moz-text-stroke-color: $accent-color;
+            -webkit-text-stroke-color: $accent-color;
+            -moz-text-stroke-width: 2px;
+            -webkit-text-stroke-width: 2px;
+        }
+
+        &::before {
+            left: 4px;
+        }
+
+        &::after {
+            left: 8px;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.entry-title {
+    margin-bottom: 2rem;
+
+    a {
+        background: none;
+
+        &:hover,
+        &:focus {
+            color: $text-color;
+        }
+
+        &:focus {
+            outline: 2px dashed $accent-color;
+        }
+    }
+}
+
+.copyright {
+    color: rgba($text-color, 0.5);
+    font-size: 80%;
+    text-align: center;
+}
+
+.entry-date {
+    color: rgba($text-color, 0.75);
+    font-size: 80%;
+    margin-bottom: 0.5rem;
+}
+
+.webmaster {
+    background: none;
+    color: rgba($text-color,.5);
+
+    &:hover,
+    &:focus {
+        background: $accent-color;
+        color: rgba($text-color,.5);
+        font-style: italic;
+    }
+}
+
+@media only screen and (min-width: $screen-sm) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    .site-title {
+        text-align: left;
+
+        a {
+            font-size: 5vw;
+        }
+    }
+}
+
+@media only screen and (min-width: $screen-md) {
+    .site-title {
+
+        a {
+            font-size: 5.5vw;
+        }
+    }    
+}
