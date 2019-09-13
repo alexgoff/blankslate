@@ -7,7 +7,12 @@ $accent-color: $red1;
 $white: #fff;
 
 $font-family-mono: 'IBM Plex Mono', monospace;
-$font-family-sans: 'Hind', sans-serif;
+$font-family-sans-serif: 'Inter', sans-serif;
+$font-family-serif: 'IBM Plex Serif', serif;
+
+$focus-outline: 2px dashed $accent-color;
+
+$line-measure: 90ch;
 
 $screen-sm: 768px;
 $screen-md: 1024px;

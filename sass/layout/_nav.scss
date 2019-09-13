@@ -8,8 +8,21 @@
         padding: 1rem 2rem 1rem 0;
     }
 
-    .current_page_item {
+    .menu-item,
+    .page_item {
+        a {
+            background: none;
+            border-bottom: 2px solid $text-color;
 
+            &:hover,
+            &:focus {
+                background: none;
+            }
+        }
+    }
+
+    .current-menu-item,
+    .current_page_item {
         a {
             &::before {
                 content: '>';
@@ -29,15 +42,8 @@
 @media only screen and (min-width: $screen-sm) {
     .menu-main {
         border-bottom: 0;
-        border-top: 2rem solid $accent-color;
         padding-bottom: 0;
         padding-top: 1rem;
         text-align: left;
-    }
-}
-
-@media only screen and (min-width: $screen-md) {
-    .menu-main {
-        border-top-width: 3rem;
     }
 }

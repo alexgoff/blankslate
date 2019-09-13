@@ -11,7 +11,7 @@
                 <?php _e( 'Nothing found for the requested page. Looking for one of these?', 'blankslate' ); ?>
             </p>
             <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class' => 'menu-404' ) ); ?>
-            <a href="mailto:me@alex-goff.com" rel="noopener" target="_blank" title="Contact me">Contact me</a>
+            <a href="mailto:<?php echo get_bloginfo('admin_email'); ?>" rel="noopener" target="_blank" title="Contact me">Contact me</a>
         </section>
     </article>
 </section>

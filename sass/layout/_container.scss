@@ -1,0 +1,38 @@
+#wrapper {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "container"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 5rem;
+
+    height: 100%;
+    min-height: 100vh;
+
+    padding: 0 0.75rem;
+}
+
+#container {
+    grid-area: container;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media only screen and (min-width: $screen-sm) {
+    #wrapper {
+        grid-template-areas: 
+            "header container"
+            "footer footer";
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 5rem;
+
+        padding: 0 2rem;
+    }
+
+    #container {
+        padding: 2rem;
+    }
+}

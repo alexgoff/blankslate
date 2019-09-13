@@ -1,0 +1,31 @@
+.entry-title {
+    margin-bottom: 2rem;
+
+    a {
+        background: none;
+        font-family: $font-family-serif;
+
+        &:hover,
+        &:focus {
+            color: $text-color;
+        }
+
+        &:focus {
+            outline: $focus-outline;
+        }
+    }
+}
+
+.entry-date {
+    color: rgba($text-color, 0.75);
+    font-size: 80%;
+    margin-bottom: 0.5rem;
+}
+
+.post {
+    margin-bottom: 2rem;
+}
+
+.read-more {
+    display: block;
+}
