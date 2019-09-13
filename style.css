@@ -334,6 +334,14 @@ img {
   outline: 2px dashed #ff4848;
 }
 
+.author > a {
+  background: none;
+  text-decoration: underline;
+}
+.author > a:hover, .author > a:focus {
+  background: none;
+}
+
 .entry-date {
   color: rgba(29, 30, 31, 0.75);
   font-size: 80%;

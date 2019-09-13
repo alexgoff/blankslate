@@ -16,6 +16,18 @@
     }
 }
 
+.author {
+    & > a {
+        background: none;
+        text-decoration: underline;
+
+        &:hover,
+        &:focus {
+            background: none;
+        }
+    }
+}
+
 .entry-date {
     color: rgba($text-color, 0.75);
     font-size: 80%;
