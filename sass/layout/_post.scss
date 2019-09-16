@@ -16,6 +16,10 @@
     }
 }
 
+.entry-meta {
+    margin-bottom: 1rem;
+}
+
 .author {
     & > a {
         background: none;
@@ -29,7 +33,7 @@
 }
 
 .entry-date {
-    color: rgba($text-color, 0.75);
+    color: $text-color-light;
     font-size: 80%;
     margin-bottom: 0.5rem;
 }

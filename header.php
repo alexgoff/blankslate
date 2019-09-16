@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#ff4848">
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
     <link href="https://rsms.me/inter/inter.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700,700i&display=swap" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Serif:400,400i,700,700i&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

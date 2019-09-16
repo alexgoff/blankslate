@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -55,6 +56,7 @@ table {
 body {
   color: #1d1e1f;
   font-family: "IBM Plex Serif", serif;
+  font-size: 1.25em;
   line-height: 1.5;
 }
 
@@ -97,15 +99,17 @@ p {
   margin-bottom: 1rem;
 }
 
-p, ul, ol, dl, span {
+p, ul, ol, dl, span, a {
   font-family: "Inter", sans-serif;
+}
+
+p, ul, ol, dl, span, pre, code, blockquote, cite, #content {
   max-width: 90ch;
 }
 
 a {
   background: rgba(255, 72, 72, 0.1);
   color: #1d1e1f;
-  font-family: "Inter", sans-serif;
   text-decoration: none;
   transition: background 0.2s linear;
 }
@@ -116,6 +120,34 @@ a:hover, a:focus {
 
 hr {
   border-top: 1px dashed #1d1e1f;
+}
+
+pre,
+code,
+.wp-block-preformatted {
+  background: rgba(29, 30, 31, 0.1);
+  font-family: "IBM Plex Mono", monospace;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+blockquote,
+.wp-block-quote {
+  color: rgba(29, 30, 31, 0.75);
+  border-left: 0.5rem solid #ff4848;
+  font-size: 120%;
+  font-style: italic;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+cite {
+  display: block;
+  font-size: 80%;
+  text-align: right;
+}
+cite::before {
+  content: "–";
 }
 
 @media only screen and (min-width: 768px) {
@@ -144,7 +176,7 @@ img {
   display: grid;
   grid-template-areas: "header" "container" "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto 5rem;
+  grid-template-rows: auto 1fr 5rem;
   height: 100%;
   min-height: 100vh;
   padding: 0 0.75rem;
@@ -232,12 +264,12 @@ img {
 }
 .menu-main {
   border-top: 1rem solid #ff4848;
-  padding-bottom: 1rem;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
 }
 .menu-main li {
   font-size: 120%;
-  padding: 1rem 2rem 1rem 0;
 }
 .menu-main .menu-item a,
 .menu-main .page_item a {
@@ -261,12 +293,17 @@ img {
   text-align: center;
 }
 
+#nav-below {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media only screen and (min-width: 768px) {
   .menu-main {
-    border-bottom: 0;
-    padding-bottom: 0;
-    padding-top: 1rem;
-    text-align: left;
+    flex-direction: column;
+  }
+  .menu-main * + * {
+    margin-top: 1rem;
   }
 }
 #footer {
@@ -332,6 +369,10 @@ img {
 }
 .entry-title a:focus {
   outline: 2px dashed #ff4848;
+}
+
+.entry-meta {
+  margin-bottom: 1rem;
 }
 
 .author > a {

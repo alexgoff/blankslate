@@ -5,7 +5,7 @@
         "container"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 5rem;
+    grid-template-rows: auto 1fr 5rem;
 
     height: 100%;
     min-height: 100vh;
