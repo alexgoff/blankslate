@@ -1,0 +1,11 @@
+.sticky  {
+    @include bg-light;
+    padding: 1rem;
+
+    .entry-title {
+        &::before {
+            content: '\1f9f7';
+            margin-right: 1ch;
+        }
+    }
+}

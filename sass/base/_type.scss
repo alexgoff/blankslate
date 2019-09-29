@@ -73,7 +73,7 @@ hr {
 pre,
 code,
 .wp-block-preformatted {
-    background: rgba($text-color,0.1);
+    @include bg-light;
     font-family: $font-family-mono;
     padding: 1rem;
     margin-bottom: 1rem;

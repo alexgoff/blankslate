@@ -397,6 +397,15 @@ img {
   display: block;
 }
 
+.sticky {
+  background: rgba(29, 30, 31, 0.1);
+  padding: 1rem;
+}
+.sticky .entry-title::before {
+  content: "🧷";
+  margin-right: 1ch;
+}
+
 .gallery {
   display: flex;
   flex-direction: column;
