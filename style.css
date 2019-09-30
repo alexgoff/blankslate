@@ -242,15 +242,17 @@ img {
   z-index: -1;
   -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
-  -moz-text-stroke-color: #ff4848;
-  -webkit-text-stroke-color: #ff4848;
   -moz-text-stroke-width: 2px;
   -webkit-text-stroke-width: 2px;
 }
 .site-title a::before {
+  -moz-text-stroke-color: rgba(255, 72, 72, 0.67);
+  -webkit-text-stroke-color: rgba(255, 72, 72, 0.67);
   left: 4px;
 }
 .site-title a::after {
+  -moz-text-stroke-color: rgba(255, 72, 72, 0.34);
+  -webkit-text-stroke-color: rgba(255, 72, 72, 0.34);
   left: 8px;
 }
 .site-title a:focus {

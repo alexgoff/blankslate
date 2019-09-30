@@ -43,17 +43,19 @@
 
             -moz-text-fill-color: transparent;
             -webkit-text-fill-color: transparent;
-            -moz-text-stroke-color: $accent-color;
-            -webkit-text-stroke-color: $accent-color;
             -moz-text-stroke-width: 2px;
             -webkit-text-stroke-width: 2px;
         }
 
         &::before {
+            -moz-text-stroke-color: scale-color($accent-color, $alpha: -33%);
+            -webkit-text-stroke-color: scale-color($accent-color, $alpha: -33%);
             left: 4px;
         }
 
         &::after {
+            -moz-text-stroke-color: scale-color($accent-color, $alpha: -66%);
+            -webkit-text-stroke-color: scale-color($accent-color, $alpha: -66%);
             left: 8px;
         }
 
